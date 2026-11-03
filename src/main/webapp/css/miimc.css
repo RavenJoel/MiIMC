@@ -1,0 +1,21 @@
+:root { --v:#1F6F5C; --v2:#2A8C74; --vl:#EAF3F1; --tx:#1d2a31; }
+body { font-family: Inter, -apple-system, "Segoe UI", Arial, sans-serif; background:#f5f7f8; color:var(--tx); }
+.btn-v { background:var(--v); border-color:var(--v); color:#fff; }
+.btn-v:hover, .btn-v:focus { background:var(--v2); border-color:var(--v2); color:#fff; }
+.text-v { color:var(--v); }
+.navbar-v { background:var(--v); }
+.brand { font-weight:800; letter-spacing:-.5px; }
+.card { border:0; box-shadow:0 2px 10px rgba(0,0,0,.06); border-radius:14px; }
+.form-control, .form-select { border-radius:9px; padding:.6rem .8rem; }
+.panel-v { background:linear-gradient(150deg, #1F6F5C, #2A8C74); }
+.dato { background:var(--vl); border-radius:12px; padding:14px 16px; }
+.small-muted { font-size:.85rem; color:#6b7780; }
+.badge-n { background:#d8f1e4; color:#11643f; }
+.badge-s { background:#fdeccc; color:#8a5300; }
+.badge-b { background:#dbe9fb; color:#1d4f8a; }
+.badge-o { background:#fbdada; color:#8f1d1d; }
+.imc-grande { font-size:56px; font-weight:800; line-height:1; color:var(--v); }
+.escala { display:flex; height:12px; border-radius:6px; overflow:hidden; }
+.escala div { height:100%; }
+.marcador { position:absolute; top:-6px; width:4px; height:24px; background:#1d2a31; border-radius:2px; }
+.btn-check:checked + .btn-outline-secondary { background:var(--v); border-color:var(--v); color:#fff; }
