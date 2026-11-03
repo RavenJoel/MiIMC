@@ -1,0 +1,20 @@
+<nav class="navbar navbar-expand-md navbar-dark navbar-v px-3 px-md-4">
+    <a class="navbar-brand brand" href="${pageContext.request.contextPath}/calcular">
+        <i class="bi bi-heart-pulse-fill"></i> MiIMC</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu"
+            aria-controls="menu" aria-expanded="false" aria-label="Men&uacute;">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="menu">
+        <ul class="navbar-nav align-items-md-center gap-md-3">
+            <li class="nav-item"><a class="nav-link ${activo eq 'calcular' ? 'active fw-bold' : ''}"
+                href="${pageContext.request.contextPath}/calcular"><i class="bi bi-calculator"></i> Calcular</a></li>
+            <li class="nav-item"><a class="nav-link ${activo eq 'historial' ? 'active fw-bold' : ''}"
+                href="${pageContext.request.contextPath}/historial"><i class="bi bi-clock-history"></i> Mi historial</a></li>
+            <li class="nav-item text-white"><i class="bi bi-person-circle"></i>
+                <c:out value="${sessionScope.usuario.nombreCompleto}"/></li>
+            <li class="nav-item"><a class="btn btn-sm btn-outline-light mt-2 mt-md-0"
+                href="${pageContext.request.contextPath}/logout"><i class="bi bi-box-arrow-right"></i> Cerrar sesi&oacute;n</a></li>
+        </ul>
+    </div>
+</nav>
